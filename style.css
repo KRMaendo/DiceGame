@@ -58,6 +58,8 @@ body {
 	font-weight: 600;
 	background: linear-gradient(#ff8585, #ff7192);
 	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
 	color: rgba(0, 0, 0, 0);
 	margin-right: 2%;
 }
@@ -83,7 +85,6 @@ body {
 	height: 35px;
 	border-radius: 30px;
 	box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .1), inset -2px -2px 15px rgba(255, 255, 255, .9);
-	position: relative;
 	padding: 6px;
 }
 
@@ -92,4 +93,16 @@ body {
 	height: 100%;
 	width: 35%;
 	border-radius: 50%;
+}
+
+.testing-push {
+	padding-top: 100px;
+}
+
+.white {
+	color: #fff;
+}
+
+.toggle {
+	transform: translateX(180%);
 }
