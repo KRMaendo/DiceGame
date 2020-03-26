@@ -19,8 +19,7 @@ h2 {
 	max-width: 1400px;
 	height: 100vh;
 	overflow: hidden;
-	padding-top: 25px;
-	padding-bottom: 20px;
+	padding: 3% 7% 3% 7%;
 }
 /* Morph-style classes and id's */
 .light {
@@ -64,8 +63,8 @@ h2 {
 	display: inline-block;
 	overflow: hidden;
 	transform: rotate(25deg);
-	max-height: 93%;
-	max-width: 8%;
+	height: auto;
+	width: 10%;
 	border: .3rem solid #eaebf3;
 	border-color: transparent;
 	border-radius: 2px;
@@ -109,8 +108,8 @@ h2 {
 }
 
 .outside #darkToggle {
-	width: 80px;
-	height: 35px;
+	width: 100%;
+	height: 110%;
 	position: absolute;
 	left: 0;
 	z-index: 1;
@@ -121,7 +120,7 @@ h2 {
 .outside .cover {
 	width: 80px;
 	height: 35px;
-	padding: 6px;
+	padding: 6%;
 }
 
 .cover .little-ball {
@@ -129,14 +128,6 @@ h2 {
 	height: 100%;
 	width: 35%;
 	border-radius: 50%;
-}
-
-.testing-push {
-	padding-top: 100px;
-}
-
-.white {
-	color: #fff;
 }
 
 .toggle {
@@ -156,14 +147,14 @@ h2 {
 
 #enter-name h2 {
 	text-align: left;
-	padding-left: 110px;
+	padding-left: 12%;
 }
 
 .text {
 	border-radius: 60px;
-	height: 70px;
-	width: 500px;
-	padding: 20px 30px;
+	height: 50%;
+	width: 87%;
+	padding: 4% 6%;
 	font-size: 1.4rem;
 	letter-spacing: 3px;
 }
@@ -179,13 +170,13 @@ h2 {
 /* Start Game */
 
 #start-game {
-	padding-top: 60px;
+	padding-top: 6%;
 	text-align: center;
 }
 
 .btn {
 	border-radius: 40px;
-	height: 65px;
+	height: 100%;
 	width: 20%;
 }
 
@@ -201,8 +192,8 @@ h2 {
 footer {
 	padding-top: 15%;
 	text-align: center;
-	bottom: 0;
 	max-width: 100%;
+	margin-bottom: 20px;
 }
 
 footer p {
@@ -226,4 +217,65 @@ footer .krm-holder img {
 	height: 80%;
 	width: auto;
 	margin: .3rem;
+}
+
+@media (max-width: 576px) {
+	/* Logo */
+	.logo {
+		text-align: center;
+		padding-top: 20%;
+	}
+	.logo img {
+		height: auto;
+		width: 10%;
+		border: .2rem solid;
+		border-color: transparent;
+	}
+
+	.logo p {
+		font-size: 160%;
+		letter-spacing: .2rem;
+		justify-self: center;
+		transform: translateY(-3%);
+	}
+
+	/* toggle */
+	.dark-mode {
+		position: absolute;
+		right: 2%;
+		top: 1%;
+	}
+
+	.dark-mode p {
+		display: inline;
+		font-size: 1rem;
+		font-weight: 600;
+		background: linear-gradient(#ff8585, #ff7192);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		color: rgba(0, 0, 0, 0);
+		margin-right: 2%;
+	}
+
+	.dark-mode .outside {
+		display: inline-block;
+		position: relative;
+		max-height: 25px;
+	}
+
+	.outside .cover {
+		width: 50px;
+		height: 20px;
+		padding: 6%;
+	}
+
+	.cover .little-ball {
+		background: linear-gradient(#ff8585, #ff7192);
+		height: 100%;
+		width: 35%;
+		border-radius: 50%;
+	}
+
+	/*  */
 }

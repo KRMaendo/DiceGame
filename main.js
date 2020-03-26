@@ -5,6 +5,7 @@ function darkModeToggled() {
 		document.querySelector('.little-ball').classList.add('toggle');
 		document.querySelector('body').classList.add('dark');
 		document.querySelector('body').classList.remove('light');
+		document.querySelector('.mode').textContent = 'Light Mode';
 		for (var i = 0; i < document.querySelectorAll('.up').length; i++) {
 			document.querySelectorAll('.up')[i].classList.add('dark-up');
 			document.querySelectorAll('.up')[i].classList.remove('light-up');
@@ -18,6 +19,7 @@ function darkModeToggled() {
 		document.querySelector('.little-ball').classList.remove('toggle');
 		document.querySelector('body').classList.add('light');
 		document.querySelector('body').classList.remove('dark');
+		document.querySelector('.mode').textContent = 'Dark Mode';
 		for (var i = 0; i < document.querySelectorAll('.up').length; i++) {
 			document.querySelectorAll('.up')[i].classList.add('light-up');
 			document.querySelectorAll('.up')[i].classList.remove('dark-up');
