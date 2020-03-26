@@ -2,13 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background: #eaebf3;
 	font-family: 'Segoe UI', sans-serif;
-}
-
-html,
-body {
-	background: #eaebf3;
 }
 
 body {
@@ -17,6 +11,22 @@ body {
 
 .container {
 	max-width: 1400px;
+}
+/* Morph-style classes and id's */
+.light {
+	background: #eaebf3;
+}
+
+.dark {
+	background: #5a5a5d;
+}
+
+.light-up {
+	box-shadow: -6px -6px 10px rgba(255, 255, 255, .8), 6px 6px 10px rgba(0, 0, 0, .2);
+}
+
+.dark-up {
+	box-shadow: -6px -6px 10px rgba(255, 255, 255, .2), 6px 6px 10px rgba(0, 0, 0, .2);
 }
 
 /* HEADER */
@@ -34,8 +44,8 @@ body {
 	height: 93%;
 	width: 8%;
 	border: .3rem solid #eaebf3;
+	border-color: transparent;
 	border-radius: 2px;
-	box-shadow: -6px -6px 10px rgba(255, 255, 255, .8), 6px 6px 10px rgba(0, 0, 0, .2);
 }
 
 .logo p {
@@ -70,7 +80,7 @@ body {
 	max-height: 30px;
 }
 
-.outside #dark-toggle {
+.outside #darkToggle {
 	width: 80px;
 	height: 35px;
 	position: absolute;
