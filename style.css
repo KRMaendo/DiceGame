@@ -12,7 +12,7 @@ body {
 }
 
 body {
-	padding-top: 20px;
+	padding-top: 3%;
 }
 
 .container {
@@ -31,8 +31,8 @@ body {
 	display: inline-block;
 	overflow: hidden;
 	transform: rotate(25deg);
-	height: 50px;
-	width: 50px;
+	height: 100%;
+	width: 10%;
 	border: 4px solid #eaebf3;
 	box-shadow: -6px -6px 10px rgba(255, 255, 255, .8), 6px 6px 10px rgba(0, 0, 0, .2);
 }
@@ -57,7 +57,9 @@ body {
 	font-weight: 600;
 	background: linear-gradient(#ff8585, #ff7192);
 	background-clip: text;
+	text-fill-color: transparent;
 	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
 	margin-right: 5px;
 }
 
