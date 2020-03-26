@@ -141,7 +141,7 @@ h2 {
 	text-align: center;
 }
 
-#enter-name .col {
+#enter-name .col-sm {
 	justify-self: center;
 }
 
@@ -220,6 +220,9 @@ footer .krm-holder img {
 }
 
 @media (max-width: 576px) {
+	.container {
+		padding-bottom: 3%;
+	}
 	/* Logo */
 	.logo {
 		text-align: center;
@@ -236,7 +239,7 @@ footer .krm-holder img {
 		font-size: 160%;
 		letter-spacing: .2rem;
 		justify-self: center;
-		transform: translateY(-3%);
+		transform: translateY(10%);
 	}
 
 	/* toggle */
@@ -244,18 +247,13 @@ footer .krm-holder img {
 		position: absolute;
 		right: 2%;
 		top: 1%;
+		justify-content: center;
 	}
 
 	.dark-mode p {
-		display: inline;
-		font-size: 1rem;
-		font-weight: 600;
-		background: linear-gradient(#ff8585, #ff7192);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		color: rgba(0, 0, 0, 0);
-		margin-right: 2%;
+		font-size: 1.2rem;
+		margin-bottom: 6%;
+		line-height: 0;
 	}
 
 	.dark-mode .outside {
@@ -277,5 +275,30 @@ footer .krm-holder img {
 		border-radius: 50%;
 	}
 
-	/*  */
+	/* Player names */
+
+	#enter-name .col-sm {
+		margin-top: 5%;
+	}
+
+	#enter-name h2 {
+		font-size: 1.5rem;
+	}
+
+	.text {
+		height: 40%;
+	}
+
+	/* Start Game */
+	.btn {
+		width: 80%;
+	}
+
+	footer {
+		margin-top: 10%;
+	}
+
+	footer .krm-holder {
+		margin-left: 15px;
+	}
 }
