@@ -59,13 +59,13 @@ body {
 	background: linear-gradient(#ff8585, #ff7192);
 	background-clip: text;
 	color: rgba(0, 0, 0, 0);
-	margin-right: 5px;
+	margin-right: 2%;
 }
 
 .dark-mode .outside {
 	display: inline-block;
 	position: relative;
-	height: 30px;
+	max-height: 30px;
 }
 
 .outside #dark-toggle {
@@ -73,7 +73,9 @@ body {
 	height: 35px;
 	position: absolute;
 	left: 0;
+	z-index: 1;
 	opacity: 0;
+	cursor: pointer;
 }
 
 .outside .cover {
@@ -88,6 +90,6 @@ body {
 .cover .little-ball {
 	background: linear-gradient(#ff8585, #ff7192);
 	height: 100%;
-	width: 37%;
+	width: 35%;
 	border-radius: 50%;
 }
