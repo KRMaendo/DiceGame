@@ -13,24 +13,51 @@
             <div class="logo col-sm"><div><img class="up light-up" src="./img/four.png" alt="dice"><p>DICE GAME</p></div></div>
             <div class="dark-mode col-sm"><p class="mode">Dark Mode</p> <div class="outside"> <input type="checkbox" name="darkToggle" id="darkToggle"><div class="cover down light-down"><div class="little-ball"></div></div></div></div>
         </header>
+    </div>
+    
+    <div class="pg-1 container container-fluid">
+       
         <!-- Section Enter Name -->
         <section id="enter-name">
             <div class="row">
                 <div class="col-sm">
                     <h2>Player One</h2>
-                    <input type="text" class ="down light-down text">
+                    <input type="text" class ="down light-down text" id="name1">
                 </div>
                 <div class="col-sm">
                     <h2>Player Two</h2>
-                    <input type="text" class="down light-down text">
+                    <input type="text" class="down light-down text" id="name2">
                 </div>
             </div>
         </section>
         <!-- CTA Start Game -->
-        <section id="start-game"><button class="btn up light-up"><div class = "gradient" >START GAME</div></button></section>
+        <section id="start-game"><button class="btn up light-up" id="next" ><div class = "gradient" >START GAME</div></button></section>
         <!-- Footer Powered by -->
         <footer><div class="row"><div class="col"><p>Powered by</p><div class="up light-up krm-holder"><img src="./img/logo.png" alt=""></div></div></div></footer>
     </div>
+
+    <div class="pg-2 container container-fluid light hide">
+        <div class="row">
+            <div class="col player player1">
+                <h2 class="name name1">Player1</h2>
+                <div class="img-container up light-up">
+                    <img src="./img/dice/one.png" alt="dice" id="dice1">
+                </div>
+            </div>
+            <div class="col player player2">
+                <h2 class="name name2">Player2</h2>
+                <div class="img-container up light-up">
+                    <img src="./img/dice/one.png" alt="dice" id="dice2">
+                </div>
+            </div>
+        </div>
+        <section id="roll-dice">
+            <button class="btn up light-up"><div class="gradient">Roll Dice</div></button>
+        </section>
+        <!-- Footer Powered by -->
+        <footer><div class="row"><div class="col"><p>Powered by</p><div class="up light-up krm-holder"><img src="./img/logo.png" alt=""></div></div></div></footer>
+    </div>
+    <div class="arrow-container hide-back"><img src="./img/back.png" alt=""></div>
     <script src="./main.js"></script>
 </body>
 </html>
