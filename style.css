@@ -23,6 +23,7 @@ h2 {
 .wrapper {
 	position: relative;
 	overflow: hidden;
+	height: 100vh;
 }
 
 .container {
@@ -209,10 +210,11 @@ h2 {
 
 /* Footer */
 footer {
-	padding-top: 12%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 2%;
 	text-align: center;
-	max-width: 100%;
-	margin-bottom: 20px;
 }
 
 footer p {
