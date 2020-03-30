@@ -22,7 +22,7 @@ h2 {
 
 .wrapper {
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 	height: 100vh;
 }
 
