@@ -9,6 +9,7 @@ var d2 = 2;
 var winner, winnerName;
 var n1 = '';
 var n2 = '';
+var html;
 function darkModeToggled() {
 	if (document.getElementById('darkToggle').checked) {
 		addDarkMode();
@@ -115,9 +116,13 @@ function rollDice() {
 	if (d1 > d2) {
 		winner = 1;
 		winnerName = n1;
-	} else {
+		html = '<div class="col winner"><h2>' + winnerName + ' Wins!!!</h2></div>';
+	} else if (d2 > d1) {
 		winner = 2;
 		winnerName = n2;
+		html = '<div class="col winner"><h2>' + winnerName + ' Wins!!!</h2></div>';
+	} else {
+		html = '<div class="col winner"><h2>No One Wins!!!</h2></div>';
 	}
 	playerWins(winner);
 }
@@ -156,17 +161,5 @@ function playerWins(num) {
 	if (document.querySelector('.winner')) {
 		document.querySelector('.winner').remove();
 	}
-	var html = '<div class="col winner"><h2>' + winnerName + ' Wins!!!</h2></div>';
 	document.querySelector('.player1').insertAdjacentHTML('afterend', html);
 }
-
-function addWrapper(dimension) {
-	if (dimension.matches) {
-		// document.body.insertAdjacentHTML('afterbegin', '<div class = "wrapper">');
-		document.body.querySelector('script').insertAdjacentHTML('afterend', '</div>');
-	}
-}
-
-var dimension = window.matchMedia('(max-width: 576px)');
-addWrapper(dimension);
-dimension.addListener(addWrapper);
