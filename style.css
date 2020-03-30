@@ -51,14 +51,14 @@ h2 {
 .light-down {
 	box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .2), inset -2px -2px 15px rgba(255, 255, 255, .9);
 	border: none;
-	background: transparent;
+	background: rgba(0, 0, 0, 0);
 	border-radius: 30px;
 }
 
 .dark-down {
 	box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .6), inset -2px -2px 15px rgba(255, 255, 255, .2);
 	border: none;
-	background: transparent;
+	background: rgba(0, 0, 0, 0);
 	border-radius: 30px;
 }
 
@@ -312,19 +312,52 @@ footer .krm-holder img {
 .arrow-container img {
 	width: 100%;
 }
-@media (max-width: 576px) {
-	body {
-		max-width: 576px !important;
-		overflow: hidden !important;
+@media (max-width: 768px) {
+	.logo {
+		text-align: center;
+		padding-top: 10%;
 	}
+
+	/* toggle */
+	.dark-mode {
+		position: absolute;
+		right: 2%;
+		top: 1%;
+		justify-content: center;
+	}
+
+	/* pg-1 */
+	.pg-1 {
+		top: 15%;
+	}
+
+	/* pg-2 */
+	.pg-2 {
+		top: 30%;
+	}
+
+	.btn {
+		width: 80%;
+	}
+
+	.player {
+		flex-direction: row;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+	.player h2 {
+		font-size: 1.2rem;
+		margin-right: 20%;
+		margin-left: 10%;
+	}
+}
+@media (max-width: 576px) {
 	.container {
 		padding-bottom: 3%;
 	}
 	/* Logo */
-	.logo {
-		text-align: center;
-		padding-top: 20%;
-	}
+
 	.logo img {
 		height: auto;
 		width: 10%;
@@ -337,14 +370,6 @@ footer .krm-holder img {
 		letter-spacing: .2rem;
 		justify-self: center;
 		transform: translateY(10%);
-	}
-
-	/* toggle */
-	.dark-mode {
-		position: absolute;
-		right: 2%;
-		top: 1%;
-		justify-content: center;
 	}
 
 	.dark-mode p {
@@ -410,17 +435,8 @@ footer .krm-holder img {
 	.pg-2 {
 		margin-top: 10%;
 	}
-
-	.player {
-		flex-direction: row;
-		margin-top: 10%;
-		margin-bottom: 10%;
-	}
-
 	.player h2 {
 		font-size: 1rem;
-		margin-right: 20%;
-		margin-left: 10%;
 	}
 
 	.arrow-container {
