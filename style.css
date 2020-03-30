@@ -55,6 +55,7 @@ h2 {
 	border-radius: 30px;
 	position: relative;
 	z-index: 1;
+	-webkit-appearance: none;
 }
 
 .dark-down {
@@ -64,6 +65,7 @@ h2 {
 	border-radius: 30px;
 	position: relative;
 	z-index: 1;
+	-webkit-appearance: none;
 }
 
 /* HEADER */
