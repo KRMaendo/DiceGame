@@ -6,10 +6,9 @@ pg2 = document.querySelector('.pg-2');
 
 var d1 = 1;
 var d2 = 2;
-var winner,
-	winnerName,
-	n1 = '',
-	n2 = '';
+var winner, winnerName;
+var n1 = '';
+var n2 = '';
 function darkModeToggled() {
 	if (document.getElementById('darkToggle').checked) {
 		addDarkMode();
@@ -60,6 +59,7 @@ function startGame() {
 function displayPage2() {
 	pg2.classList.add('display');
 	pg2.classList.remove('hide');
+	document.querySelector('.pg-1').style.opacity = '0';
 	document.querySelector('.arrow-container').classList.add('display-back');
 	document.querySelector('.arrow-container').classList.remove('hide-back');
 }
@@ -70,6 +70,8 @@ function hidePage2() {
 	pg2.classList.remove('display');
 	document.querySelector('.arrow-container').classList.add('hide-back');
 	document.querySelector('.arrow-container').classList.remove('display-back');
+	document.querySelector('.pg-1').style.opacity = '1';
+	console.log('click');
 }
 
 function updatePlayerNames() {
@@ -99,7 +101,8 @@ function resetGame() {
 	document.querySelector('.name2').textConent = 'Player2';
 	document.getElementById('name1').value = '';
 	document.getElementById('name2').value = '';
-	document.querySelector('.winner').remove();
+	if (document.querySelector('.winner')) document.querySelector('.winner').remove();
+
 	d1 = 1;
 	d2 = 1;
 }
@@ -156,3 +159,14 @@ function playerWins(num) {
 	var html = '<div class="col winner"><h2>' + winnerName + ' Wins!!!</h2></div>';
 	document.querySelector('.player1').insertAdjacentHTML('afterend', html);
 }
+
+function addWrapper(dimension) {
+	if (dimension.matches) {
+		// document.body.insertAdjacentHTML('afterbegin', '<div class = "wrapper">');
+		document.body.querySelector('script').insertAdjacentHTML('afterend', '</div>');
+	}
+}
+
+var dimension = window.matchMedia('(max-width: 576px)');
+addWrapper(dimension);
+dimension.addListener(addWrapper);

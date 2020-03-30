@@ -7,6 +7,7 @@
 
 body {
 	overflow: hidden;
+	transition: all 1s ease-in;
 }
 
 h2 {
@@ -17,6 +18,11 @@ h2 {
 	color: rgba(0, 0, 0, 0);
 	margin-bottom: .8rem;
 	line-height: 1.6;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
 }
 
 .container {
@@ -143,6 +149,8 @@ h2 {
 	top: 10%;
 	left: 0;
 	right: 0;
+	transition: all 1s ease-in;
+	overflow: hidden;
 }
 
 /* Player names */
@@ -303,6 +311,10 @@ footer .krm-holder img {
 	width: 100%;
 }
 @media (max-width: 576px) {
+	body {
+		max-width: 576px !important;
+		overflow: hidden !important;
+	}
 	.container {
 		padding-bottom: 3%;
 	}
@@ -358,6 +370,12 @@ footer .krm-holder img {
 		border-radius: 50%;
 	}
 
+	/* Page One */
+
+	.pg-1 {
+		margin-top: 10%;
+	}
+
 	/* Player names */
 
 	#enter-name .col-sm {
@@ -383,5 +401,51 @@ footer .krm-holder img {
 
 	footer .krm-holder {
 		margin-left: 15px;
+	}
+
+	/* Page 2 */
+
+	.pg-2 {
+		margin-top: 10%;
+	}
+
+	.player {
+		flex-direction: row;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+	.player h2 {
+		font-size: 1rem;
+		margin-right: 20%;
+		margin-left: 10%;
+	}
+
+	.arrow-container {
+		width: 6%;
+	}
+
+	.winner {
+		top: -2%;
+	}
+
+	@media (max-height: 640px) {
+		.pg-1 {
+			margin-top: 20%;
+		}
+
+		footer {
+			margin-top: 10%;
+		}
+	}
+
+	@media (max-height: 740px) {
+		.pg-1 {
+			margin-top: 20%;
+		}
+
+		footer {
+			margin-top: 30%;
+		}
 	}
 }
