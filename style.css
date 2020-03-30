@@ -22,7 +22,7 @@ h2 {
 
 .wrapper {
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 	height: 100vh;
 }
 
@@ -445,25 +445,5 @@ footer .krm-holder img {
 
 	.winner {
 		top: -2%;
-	}
-
-	@media (max-height: 640px) {
-		.pg-1 {
-			margin-top: 20%;
-		}
-
-		footer {
-			margin-top: 10%;
-		}
-	}
-
-	@media (max-height: 740px) {
-		.pg-1 {
-			margin-top: 20%;
-		}
-
-		footer {
-			margin-top: 30%;
-		}
 	}
 }
